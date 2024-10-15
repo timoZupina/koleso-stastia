@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleso šťastia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="category-selection">
+        <h1>Vyberte kategóriu</h1>
+        <button onclick="startWheel(1)">Úroveň 1 (Lacnejšie ceny)</button>
+        <button onclick="startWheel(2)">Úroveň 2 (Drahšie ceny)</button>
+    </div>
+
+    <div id="wheel-container" style="display:none;">
+        <h1>Koleso šťastia</h1>
+        <div class="wheel-wrapper">
+            <div id="wheel">
+                <!-- Sem príde grafika kolesa -->
+                <div class="segment-text" id="segment-text-1"></div>
+                <div class="segment-text" id="segment-text-2"></div>
+                <div class="segment-text" id="segment-text-3"></div>
+                <div class="segment-text" id="segment-text-4"></div>
+                <div class="segment-text" id="segment-text-5"></div>
+            </div>
+            <div id="indicator">▲</div> <!-- Fixný ukazovateľ -->
+        </div>
+        <button id="spin-btn" onclick="spinWheel()">Otočiť koleso</button>
+        <button id="back-btn" onclick="resetGame()" style="display:none;">Späť na úvod</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
