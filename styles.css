@@ -38,17 +38,10 @@ button {
 }
 
 img {
-    height: auto;
+    width: auto;
+    height: 100px;
     display: block; /* Obrázok bude ako blokový element */
     margin: 0 auto; /* Obrázok bude centrovaný horizontálne */
-}
-
-.main-img {
-    max-width: 80vw;
-}
-
-.next-img {
-    max-width: 80vw;
 }
 
 #wheel {
