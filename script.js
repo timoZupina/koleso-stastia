@@ -40,12 +40,13 @@ function spinWheel() {
 
         const prizeIndex = Math.floor(adjustedDegree / (360 / 5)); // Výber segmentu podľa uhla
 
-        const prizes = ["Zľava 10%", "Zľava 15%", "Tričko", "Kľúčenka", "Pero"];
-        alert(`Vyhrali ste: ${prizes[prizeIndex]}!`);
+        // Výber správnych cien podľa zvolenej úrovne
+        const selectedPrize = selectedCategory === 1 ? prizesLevel1[prizeIndex] : prizesLevel2[prizeIndex];
+
+        alert(`Vyhrali ste: ${selectedPrize}!`);
         document.getElementById("back-btn").style.display = "inline-block"; // Zobrazenie tlačidla na návrat
     }, 4000); // Časovač na 4 sekundy, synchronizovaný s animáciou
 }
-
 
 function resetGame() {
     document.getElementById("category-selection").style.display = "block";

@@ -9,12 +9,15 @@
 <body>
     <div id="category-selection">
         <h1>Vyberte kategóriu</h1>
-        <button onclick="startWheel(1)">Úroveň 1 (Lacnejšie ceny)</button>
-        <button onclick="startWheel(2)">Úroveň 2 (Drahšie ceny)</button>
+        <image class="main-img" src="logo.png"></image>
+        <br><br>
+        <button class="green-button" onclick="startWheel(1)">1x follow</button>
+        <button class="green-button" onclick="startWheel(2)">2x follow</button>
     </div>
 
     <div id="wheel-container" style="display:none;">
         <h1>Koleso šťastia</h1>
+        <image class="next-img" src="logo.png"></image>
         <div class="wheel-wrapper">
             <div id="wheel">
                 <!-- Sem príde grafika kolesa -->
@@ -26,8 +29,8 @@
             </div>
             <div id="indicator">▲</div> <!-- Fixný ukazovateľ -->
         </div>
-        <button id="spin-btn" onclick="spinWheel()">Otočiť koleso</button>
-        <button id="back-btn" onclick="resetGame()" style="display:none;">Späť na úvod</button>
+        <button id="spin-btn" class="gray-button" onclick="spinWheel()">Otočiť koleso</button>
+        <button id="back-btn" class="green-button" onclick="resetGame()" style="display:none;">Späť na úvod</button>
     </div>
 
     <script src="script.js"></script>

@@ -4,18 +4,51 @@ body {
     margin-top: 50px;
 }
 
+/* Všeobecné štýly pre tlačidlá */
 button {
     padding: 15px 30px;
     font-size: 16px;
-    margin: 10px;
-    background-color: #62BB46;
-    color: white;
-    border: none;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#spin-btn {
+/* Zelené tlačidlo */
+.green-button {
+    border-color: #62BB46;
+    color: #62BB46;
+}
+
+.green-button:hover, .green-button:active {
+    background-color: #62BB46;
+    color: white;
+}
+
+/* Šedé tlačidlo */
+.gray-button {
+    border-color: #414143;
+    color: #414143;
+}
+
+.gray-button:hover, .gray-button:active {
     background-color: #414143;
+    color: white;
+}
+
+img {
+    width: auto; /* Šírka sa automaticky prispôsobí podľa rozmerov obrázka */
+    display: block; /* Obrázok bude ako blokový element */
+    margin: 0 auto; /* Obrázok bude centrovaný horizontálne */
+}
+
+.main-img {
+    max-height: 40vh;
+}
+
+.next-img {
+    max-height: 15vh;
 }
 
 #wheel {
@@ -44,12 +77,12 @@ button {
 
 .segment-text {
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 300px;
     font-size: 16px;
     color: white;
     text-align: center;
-    transform-origin: 150px 150px;
+    transform-origin: 100px 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(90deg);
