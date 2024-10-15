@@ -38,7 +38,7 @@ button {
 }
 
 img {
-    height: 200px;
+    height: 100px;
     width: auto;
     display: block; /* Obrázok bude ako blokový element */
     margin: 0 auto; /* Obrázok bude centrovaný horizontálne */
